@@ -1,19 +1,30 @@
 <style>
-  /* Inherit Squarespace fonts and colors */
-  body, h1, h2, h3, h4, h5, h6, p, small, label, button, input {
-    font-family: var(--sqs-font-family, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  /* Load the same Google Fonts Squarespace uses */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Urbanist:wght@500;600;700&display=swap');
+
+  /* Apply Poppins for body text */
+  body, p, small, label, button, input {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #111;
+    background: transparent;
+  }
+
+  /* Apply Urbanist for headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Urbanist', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
     color: #111;
   }
 
-  /* Remove all container visuals and fixed sizing */
+  /* Clean minimalist layout */
   .tmcalc-container {
     background: none;
     padding: 0;
     margin: 0;
     border: none;
     box-shadow: none;
-    max-width: none;
     width: 100%;
+    max-width: none;
   }
 
   .tmcalc-cost {
