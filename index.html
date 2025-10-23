@@ -1,17 +1,19 @@
 <style>
-  /* Use Squarespace-like system fonts and inherit colors */
+  /* Inherit Squarespace fonts and colors */
   body, h1, h2, h3, h4, h5, h6, p, small, label, button, input {
     font-family: var(--sqs-font-family, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif);
     color: #111;
   }
 
+  /* Remove all container visuals and fixed sizing */
   .tmcalc-container {
-    background: transparent;            /* transparent background for embedding */
-    padding: 2rem 1.5rem;               /* comfortable spacing */
-    border-radius: 14px;
-    box-shadow: none;                   /* remove heavy shadow to match Squarespace */
-    max-width: 100%;                    /* fill container width when embedded */
-    margin: 0 auto;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    max-width: none;
+    width: 100%;
   }
 
   .tmcalc-cost {
@@ -35,7 +37,6 @@
     line-height: 1.5;
   }
 
-  /* Subtle accent color for links (optional) */
   a {
     color: #007bff;
     text-decoration: none;
