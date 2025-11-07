@@ -38,6 +38,17 @@
     margin: 1rem 0 0.7rem 0;
   }
 
+  /* Slightly larger slider thumb (1.5x) while keeping default look */
+  input[type=range]::-webkit-slider-thumb {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+
   .tmcalc-class-label {
     font-weight: 600;
     margin: 0.25rem 0 0.7rem 0;
